@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnify | Student Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Learnify<span>.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeBtn" class="theme-btn"
+                    aria-label="Toggle dark mode">🌙</button>
+                <button id="menuBtn" class="menu-btn"
+                    aria-label="Toggle navigation">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="tag">YOUR FUTURE STARTS HERE</span>
+
+                <h1>Learn Today.<br>
+                    <span>Lead Tomorrow.</span>
+                </h1>
+
+                <p>
+                    Explore new skills, learn from curated courses,
+                    and take the next step toward your dream career.
+                </p>
+
+                <a href="#courses" class="primary-btn">
+                    Explore Courses →
+                </a>
+
+                <div class="stats">
+                    <div>
+                        <h3>20+</h3>
+                        <p>Courses</p>
+                    </div>
+                    <div>
+                        <h3>500+</h3>
+                        <p>Students</p>
+                    </div>
+                    <div>
+                        <h3>10+</h3>
+                        <p>Instructors</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=85"
+                    alt="Students learning together">
+                <div class="floating-card">
+                    <span>🎓</span>
+                    <div>
+                        <strong>Keep Learning!</strong>
+                        <p>Your next skill awaits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="courses section" id="courses">
+            <div class="section-heading">
+                <span class="tag">OUR COURSES</span>
+                <h2>Explore Popular Courses</h2>
+                <p>Find the right course to build your skills.</p>
+            </div>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search courses, e.g. HTML..."
+                    aria-label="Search courses">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <p id="resultCount" class="result-count"
+                aria-live="polite"></p>
+
+            <div class="course-grid" id="courseGrid">
+
+                <article class="course-card"
+                    data-name="web development html css javascript">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80"
+                        alt="Web development workspace">
+                    <div class="course-info">
+                        <span class="category">DEVELOPMENT</span>
+                        <h3>Web Development</h3>
+                        <p>Learn HTML, CSS and JavaScript from scratch.</p>
+                        <div class="course-bottom">
+                            <span>⏱ 6 Weeks</span>
+                            <button class="enroll-btn"
+                                data-course="Web Development">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card"
+                    data-name="python programming coding">
+                    <img
+                        src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=700&q=80"
+                        alt="Programming code on a screen">
+                    <div class="course-info">
+                        <span class="category">PROGRAMMING</span>
+                        <h3>Python Programming</h3>
+                        <p>Discover programming and solve problems with Python.</p>
+                        <div class="course-bottom">
+                            <span>⏱ 4 Weeks</span>
+                            <button class="enroll-btn"
+                                data-course="Python Programming">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card"
+                    data-name="ui ux design graphic design">
+                    <img
+                        src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=700&q=80"
+                        alt="Creative design work">
+                    <div class="course-info">
+                        <span class="category">DESIGN</span>
+                        <h3>UI/UX Design</h3>
+                        <p>Learn to design attractive and user-friendly interfaces.</p>
+                        <div class="course-bottom">
+                            <span>⏱ 5 Weeks</span>
+                            <button class="enroll-btn"
+                                data-course="UI/UX Design">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card"
+                    data-name="data science analytics">
+                    <img
+                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80"
+                        alt="Data analytics dashboard">
+                    <div class="course-info">
+                        <span class="category">DATA</span>
+                        <h3>Data Science</h3>
+                        <p>Understand data analysis and explore useful insights.</p>
+                        <div class="course-bottom">
+                            <span>⏱ 8 Weeks</span>
+                            <button class="enroll-btn"
+                                data-course="Data Science">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card"
+                    data-name="artificial intelligence machine learning">
+                    <img
+                        src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=700&q=80"
+                        alt="Artificial intelligence concept">
+                    <div class="course-info">
+                        <span class="category">ARTIFICIAL INTELLIGENCE</span>
+                        <h3>Artificial Intelligence</h3>
+                        <p>Explore AI concepts and machine learning basics.</p>
+                        <div class="course-bottom">
+                            <span>⏱ 6 Weeks</span>
+                            <button class="enroll-btn"
+                                data-course="Artificial Intelligence">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card"
+                    data-name="database sql dbms">
+                    <img
+                        src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=700&q=80"
+                        alt="Database technology">
+                    <div class="course-info">
+                        <span class="category">DATABASE</span>
+                        <h3>SQL & DBMS</h3>
+                        <p>Learn database concepts, SQL queries and data management.</p>
+                        <div class="course-bottom">
+                            <span>⏱ 3 Weeks</span>
+                            <button class="enroll-btn"
+                                data-course="SQL & DBMS">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="noResults" class="no-results" hidden>
+                No courses found. Try another search.
+            </p>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="about-content">
+                <span class="tag">ABOUT LEARNIFY</span>
+                <h2>Learning Made Simple</h2>
+                <p>
+                    Learnify is a student-focused learning platform
+                    designed to make skill development accessible and
+                    enjoyable. Explore different subjects and discover
+                    new opportunities at your own pace.
+                </p>
+                <a href="#courses" class="primary-btn">Start Learning →</a>
+            </div>
+
+            <div class="about-box">
+                <div class="about-item">
+                    <span>📚</span>
+                    <h3>Quality Content</h3>
+                    <p>Organized learning resources.</p>
+                </div>
+                <div class="about-item">
+                    <span>💡</span>
+                    <h3>Practical Skills</h3>
+                    <p>Learn useful, modern skills.</p>
+                </div>
+                <div class="about-item">
+                    <span>🚀</span>
+                    <h3>Career Growth</h3>
+                    <p>Prepare for future opportunities.</p>
+                </div>
+                <div class="about-item">
+                    <span>🎯</span>
+                    <h3>Learn Your Way</h3>
+                    <p>Explore topics that interest you.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="section-heading">
+                <span class="tag">GET IN TOUCH</span>
+                <h2>Contact Us</h2>
+                <p>Have a question? Send us a message.</p>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="userName"
+                    placeholder="Your Name" required>
+
+                <input type="email" id="userEmail"
+                    placeholder="Your Email" required>
+
+                <textarea id="userMessage"
+                    placeholder="Write your message..."
+                    rows="5" required></textarea>
+
+                <button type="submit" class="primary-btn">
+                    Send Message
+                </button>
+
+                <p id="formMessage" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#home" class="logo">Learnify<span>.</span></a>
+        <p>Learn something new every day.</p>
+        <p class="copyright">
+            © 2026 Learnify. Student Mini Project.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
